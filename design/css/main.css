@@ -112,6 +112,7 @@ body {
     height: 16.6em;
     margin-bottom: 2.5rem;
     border-radius: 7px 7px 0 0;
+    width: 100%;
   }
   .container .content-container .image .layer {
     height: 100%;
