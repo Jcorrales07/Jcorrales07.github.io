@@ -1,0 +1,167 @@
+
+@use 'generales' as g;
+// @use 'mediaqueries';
+
+
+.container {
+    width: 80%;
+    max-width: 1440px;
+    margin: 12em auto;
+    font-size: 15px;
+    .content-container {
+        width: 100%;    
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center;
+        background: g.$cardBackground;
+        border-radius: 7px;
+        .image {
+            background: url('../../images/image-header-desktop.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 85%;
+            height: 450px;
+            display: block;
+            border-radius: 0 7px 7px 0;
+            position: relative;
+            .layer {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                background-color: g.$softViolet;
+                z-index: 2;
+                opacity: .54;
+                border-radius: 0 7px 7px 0;
+            }
+        }
+        .general {
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            .text-container {
+                width: 80.95%;
+                margin: 0 auto;
+                text-align: left;
+                .title {
+                    color: g.$normalWhite;
+                    font-size: 2.4rem;
+                    margin-bottom: 1.4rem; 
+                    // text-align: left;
+                    .purple {
+                        color: g.$softViolet;
+                    }
+                }
+                .text {
+                    width: 90%;
+                    font-size: 1.06rem;
+                    line-height: 25px;
+                    color: g.$white-75;
+                }
+            }
+            .flex {
+                width: 80%;
+                display: flex;
+                align-content: center;
+                justify-content: space-evenly;
+                .content {
+                    padding: 0 1.3rem;
+                    .stats {
+                        color: g.$normalWhite;
+                        font-size: 1.4rem;
+                        margin-bottom: .5rem;
+                        text-align: left;
+                    } 
+                    .headings {
+                        color: g.$white-6;
+                        font-size: .9rem;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .container {
+        width: 60%;
+        max-width: 375px;
+        margin: 5em auto;
+        font-size: 15px;
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background: g.$cardBackground;
+            border-radius: 7px;
+            .image {
+                background: url('../../images/image-header-mobile.jpg');
+                background-repeat: repeat;
+                background-position: center;
+                background-size: cover;
+                width: 25em;
+                height: 16.6em;
+                margin-bottom: 2.5rem;
+                border-radius: 7px 7px 0 0;
+                .layer {
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    background-color: g.$softViolet;
+                    z-index: 2;
+                    opacity: .54;
+                    border-radius: 7px 7px 0  0;
+                }
+            }
+            .general {
+                width: 100%;
+                // margin: 0 20px;
+                .text-container {
+                    width: 80%;
+                    margin: auto;
+                    text-align: center;
+                    .title {
+                        color: g.$normalWhite;
+                        font-size: 1.9rem;
+                        margin-bottom: 1.5rem;
+                        .purple {
+                            color: g.$softViolet;
+                        }
+                    }
+                    .text {
+                        width: 85%;
+                        margin: auto;
+                        margin-bottom: 1.4rem;
+                        line-height: 25px;
+                        color: g.$white-75;
+                    }
+                }
+                .flex {
+                    width: 80%;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 1.4rem;
+                    color: g.$normalWhite;
+                    .content {
+                        padding: 1.3rem;
+                        .stats {
+                            width: 100%;
+                            margin: auto;
+                            font-size: 1.4rem;
+                            margin-bottom: .5rem;
+                            text-align: center;
+                        } 
+                        .headings {
+                            color: g.$white-6;
+                            font-size: .9rem;
+                            text-transform: uppercase;
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}

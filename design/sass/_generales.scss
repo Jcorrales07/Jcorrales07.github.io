@@ -1,0 +1,29 @@
+// ============
+//    COLORS
+// ============
+
+$mainBackground: hsl(233, 47%, 7%);
+$cardBackground: hsl(244, 38%, 16%);
+$softViolet: hsl(277, 64%, 61%);
+
+// NEUTRAL COLORS
+
+$normalWhite: hsl(0, 0%, 100%);
+$white-75: hsla(0, 0%, 100%, 0.75);
+$white-6: hsla(0, 0%, 100%, 0.6);
+
+// FONT FAMILIES 
+
+$primaryFfamily: 'Inter', sans-serif;;
+$secondaryFfamily:'Lexend Deca', sans-serif;;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: $mainBackground;
+    font-family: $primaryFfamily;
+}
